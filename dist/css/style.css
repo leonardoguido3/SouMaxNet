@@ -7,16 +7,24 @@
     --espacamento-topo: 3.5rem;
     --espacamento-bottom: 3.5rem;
     --espacamento-esquerda: 18px;
-  }
+}
 
 /* Define as margens e preenchimentos padrão como 0 */
 * {
     margin: 0;
     padding: 0;
 }
-h1, h2, h3, h4, h5, h6, a, p {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
     font-family: 'Poppins', sans-serif;
-  }
+}
 
 /* Define as fontes padrão */
 html {
@@ -32,7 +40,6 @@ body {
     background-color: var(--cor-background) !important;
     width: 100vw !important;
     position: fixed;
-    back
 }
 
 .display-7 {
@@ -50,7 +57,7 @@ body {
     padding-left: var(--espacamento-esquerda);
 }
 
-.contrate{
+.contrate {
     position: relative;
     display: inline-block;
     padding: 30px 35px;
@@ -62,92 +69,108 @@ body {
     letter-spacing: 4px;
     overflow: hidden;
     margin-right: 50px;
-   
+
 }
-.contrate:hover{
+
+.contrate:hover {
     background: #03e9f4;
     color: #050801;
     box-shadow: 0 0 5px #03e9f4,
-                0 0 30px #03e9f4,
-                0 0 55px #03e9f4,
-                0 0 250px #03e9f4;
-     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+        0 0 30px #03e9f4,
+        0 0 55px #03e9f4,
+        0 0 250px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
-.contrate span{
+.contrate span {
     position: absolute;
     display: block;
 }
-.contrate span:nth-child(1){
+
+.contrate span:nth-child(1) {
     top: 0;
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg,transparent,#03e9f4);
+    background: linear-gradient(90deg, transparent, #03e9f4);
     animation: animate1 1s linear infinite;
 }
-@keyframes animate1{
-    0%{
+
+@keyframes animate1 {
+    0% {
         left: -100%;
     }
-    50%,100%{
+
+    50%,
+    100% {
         left: 100%;
     }
 }
-.contrate span:nth-child(2){
+
+.contrate span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg,transparent,#03e9f4);
+    background: linear-gradient(180deg, transparent, #03e9f4);
     animation: animate2 1s linear infinite;
     animation-delay: 0.25s;
 }
-@keyframes animate2{
-    0%{
+
+@keyframes animate2 {
+    0% {
         top: -100%;
     }
-    50%,100%{
+
+    50%,
+    100% {
         top: 100%;
     }
 }
-.contrate span:nth-child(3){
+
+.contrate span:nth-child(3) {
     bottom: 0;
     right: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg,transparent,#03e9f4);
+    background: linear-gradient(270deg, transparent, #03e9f4);
     animation: animate3 1s linear infinite;
     animation-delay: 0.50s;
 }
-@keyframes animate3{
-    0%{
+
+@keyframes animate3 {
+    0% {
         right: -100%;
     }
-    50%,100%{
+
+    50%,
+    100% {
         right: 100%;
     }
 }
 
-.contrate span:nth-child(4){
+.contrate span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg,transparent,#03e9f4);
+    background: linear-gradient(360deg, transparent, #03e9f4);
     animation: animate4 1s linear infinite;
     animation-delay: 0.75s;
 }
-@keyframes animate4{
-    0%{
+
+@keyframes animate4 {
+    0% {
         bottom: -100%;
     }
-    50%,100%{
+
+    50%,
+    100% {
         bottom: 100%;
     }
 }
 
-.text-compara{
+.text-compara {
     margin-top: var(--espacamento-topo);
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
@@ -159,46 +182,56 @@ body {
     animation: animate 3s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  }
-  
-  @keyframes animate {
+}
+
+@keyframes animate {
     0% {
-      background-position: -500%;
+        background-position: -500%;
     }
-    10%{
+
+    10% {
         background-position: -400%;
     }
-    20%{
+
+    20% {
         background-position: -300%;
     }
-    30%{
+
+    30% {
         background-position: -200%;
-    } 
-    40%{
+    }
+
+    40% {
         background-position: -100%;
     }
-    50%{
-      background-position: 0%;
+
+    50% {
+        background-position: 0%;
     }
-    60%{
+
+    60% {
         background-position: 100%;
     }
-    70%{
+
+    70% {
         background-position: 200%;
-    } 
-    80%{
+    }
+
+    80% {
         background-position: 300%;
     }
-    90%{
+
+    90% {
         background-position: 400%;
     }
-    100%{
+
+    100% {
         background-position: 500%;
     }
-  }
+}
 
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .navbar {
-      opacity: 0.9;
+        opacity: 0.9;
     }
-  }
+}
