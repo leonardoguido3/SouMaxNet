@@ -30,16 +30,18 @@ body {
 /* Definindo a cor da NAVBAR */
 .navbar {
     background-color: var(--cor-background) !important;
-    width: 95vw !important;
+    width: 100vw !important;
+    position: fixed;
+    back
 }
 
 .display-7 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 /* Definindo logo menu */
 .logo-nav {
-    width: 10rem;
+    width: 12rem;
 }
 
 /* Padding top para promocao */
@@ -192,5 +194,11 @@ body {
     }
     100%{
         background-position: 500%;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .navbar {
+      opacity: 0.9;
     }
   }
