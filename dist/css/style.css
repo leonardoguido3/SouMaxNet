@@ -39,7 +39,6 @@ body {
 .navbar {
     background-color: var(--cor-background) !important;
     width: 100vw !important;
-    position: fixed;
 }
 
 .display-7 {
@@ -58,6 +57,7 @@ body {
 }
 
 .contrate {
+    top: var(--espacamento-topo);
     position: relative;
     display: inline-block;
     padding: 30px 35px;
